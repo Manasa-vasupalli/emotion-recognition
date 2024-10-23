@@ -5,6 +5,9 @@ The goal is to develop a model that can accurately recognize emotions from facia
 # Dataset Link 
 
 Link to dataset : https://www.kaggle.com/datasets/msambare/fer2013/data
+https://www.kaggle.com/datasets/sudarshanvaidya/random-images-for-face-emotion-recognition
+
+
 
 
 
