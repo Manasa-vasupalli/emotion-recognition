@@ -1,0 +1,46 @@
+import numpy as np
+import tensorflow as tf
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load the saved model
+model = load_model('my_model.h5')
+
+# Directory paths
+test_dir = 'Dataset/test'
+
+# Parameters
+img_height, img_width = 48, 48
+batch_size = 32
+
+# Load and preprocess the testing data
+test_datagen = ImageDataGenerator(rescale=1.0 / 255)
+
+test_generator = test_datagen.flow_from_directory(
+    test_dir,
+    target_size=(img_height, img_width),
+    batch_size=batch_size,
+    class_mode='categorical',
+    color_mode='grayscale',
+    shuffle=False  # Important to keep order for evaluation
+)
+
+# Get true labels and predicted labels
+y_true = test_generator.classes
+y_pred = model.predict(test_generator)
+y_pred = np.argmax(y_pred, axis=1)
+
+# Generate the confusion matrix
+cm = confusion_matrix(y_true, y_pred)
+labels = list(test_generator.class_indices.keys())
+
+# Plot the confusion matrix
+plt.figure(figsize=(10, 8))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=labels, yticklabels=labels)
+plt.xlabel("Predicted Labels")
+plt.ylabel("True Labels")
+plt.title("Confusion Matrix")
+plt.show()
