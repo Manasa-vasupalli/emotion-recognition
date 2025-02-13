@@ -2,6 +2,7 @@ import os
 import matplotlib.pyplot as plt
 from PIL import Image
 
+
 # Function to count images in folders, ignoring non-directory files like .DS_Store
 def count_images_in_folders(data_dir):
     category_counts = {}
