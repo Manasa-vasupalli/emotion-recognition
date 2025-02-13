@@ -9,7 +9,6 @@ from dwave.system import DWaveSampler, EmbeddingComposite
 from tensorflow.keras.utils import to_categorical
 from dwave.system import LeapHybridSampler
 
-
 train_data_dir = 'Dataset/train'  
 validation_data_dir = 'Dataset/test'  
 img_size = (48, 48)
