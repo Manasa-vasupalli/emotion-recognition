@@ -1,6 +1,5 @@
 # emotion-recognition
-This project implements emotion recognition using Convolutional Neural Networks (CNNs) to classify facial expressions into different emotions such as happiness, sadness, anger, and surprise. It uses the FER-2013 and disgust images from face-emotion-recognition images dataset for training and supports real-time emotion detection via webcam. 
-The goal is to develop a model that can accurately recognize emotions from facial images with a user-friendly interface.
+This project leverages Convolutional Neural Networks (CNNs) for emotion recognition, classifying facial expressions into distinct emotions such as happiness, sadness, anger, surprise, and disgust. It utilizes the FER-2013 dataset, supplemented with additional disgust images from the face-emotion-recognition dataset, to enhance model accuracy. The system supports real-time emotion detection via webcam, enabling dynamic interaction. With a focus on robust feature extraction and classification, the model aims to achieve high precision in recognizing human emotions. Additionally, a user-friendly interface enhances accessibility, making it suitable for applications in customer service, mental health analysis, and human-computer interaction.
 
 # Dataset Link 
 
@@ -9,7 +8,7 @@ https://www.kaggle.com/datasets/sudarshanvaidya/random-images-for-face-emotion-r
 
 # Significance of the Project
 
-The convergence of deep learning and quantum computing in this project reflects the forefront of AI research, pushing the limits of what emotion recognition systems can achieve. By addressing challenges like data imbalance and computational latency, this project lays the foundation for scalable and accurate emotion recognition systems, with the potential to transform industries and improve human-machine interactions.
+This project represents a cutting-edge fusion of deep learning and quantum computing, pushing the boundaries of AI-driven emotion recognition. By leveraging the strengths of both technologies, it tackles critical challenges such as data imbalance, computational latency, and model scalability. The integration of quantum-inspired optimization techniques enhances processing efficiency, enabling faster and more accurate emotion classification. This pioneering approach not only advances the field of affective computing but also lays the groundwork for real-world applications in healthcare, human-computer interaction, and customer experience optimization. With its potential to redefine emotion recognition systems, this project marks a significant step toward the future of AI-driven emotional intelligence.
 
 # Final Model Architecture
 
